@@ -1,6 +1,6 @@
 # CI/CD Pipeline Implementations
 
-<img src="./image.png" height="500">
+<img src="./image.png" height="200">
 
 ## CI/CD Pipeline Demonstration Repositoy
 
