@@ -1,18 +1,12 @@
 #!/bin/bash
 
-# Check if commit message is provided
-if [ -z "$1" ]; then
-    echo "Usage: ./git-push.sh \"Your commit message\""
-    exit 1
-fi
-
 # Stage all changes
 git add .
 
 # Commit with the provided message
-git commit -m "$1"
+git commit -m "Updated by Lyna"
 
 # Push to the current branch
-git push
+git push origin main
 
 echo "✅ Code pushed successfully!"
