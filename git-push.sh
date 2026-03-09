@@ -7,6 +7,6 @@ git add .
 git commit -m "Updated by Lyna"
 
 # Push to the current branch
-git push origin main
+git push origin springboot-ecs-cicd-pipeline
 
 echo "✅ Code pushed successfully!"
