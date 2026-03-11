@@ -1,5 +1,5 @@
 ./git-push.sh
-./terraformadmin_accessKeys.csv
+./*.csv
 ./terraform/.terraform
 ./terraform/.terraform.lock.hcl
 ./terraform/*.txt
@@ -7,4 +7,3 @@
 ./terraform/main-key.pub
 ./terraform/*.tfstate
 ./terraform/*.tfstate.*
-
