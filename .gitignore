@@ -1,10 +1,9 @@
-./git-push.sh
 ./*.csv
 ./terraform/*
-# ./terraform/.terraform
-# ./terraform/.terraform.lock.hcl
-# ./terraform/*.txt
-# ./terraform/main-key
-# ./terraform/main-key.pub
-# ./terraform/*.tfstate
-# ./terraform/*.tfstate.*
+./terraform/.terraform
+./terraform/.terraform.lock.hcl
+./terraform/*.txt
+./terraform/main-key
+./terraform/main-key.pub
+./terraform/*.tfstate
+./terraform/*.tfstate.*
