@@ -1,15 +1,15 @@
-./terraform/*
-./*.csv
-./terraform/*
-./terraform/.terraform
-./terraform/.terraform.lock.hcl
-./terraform/*.txt
-./terraform/main-key
-./terraform/main-key.pub
-./terraform/*.tfstate
-./terraform/*.tfstate.*
+# Terraform generated files
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform.lock.hcl
 
-.terraform/
-*.tfstate
-*.tfstate.*
-.terraform.lock.hcl
+# Keys
+terraform/main-key
+terraform/main-key.pub
+*.pem
+*.key
+
+# Local files
+*.txt
+*.csv
