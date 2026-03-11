@@ -26,6 +26,7 @@
   - SonarQube Scanner
   - Build Timestamp
   - CloudBees Docker Build and Publish
+  - Slack Notification
 
 ---
 

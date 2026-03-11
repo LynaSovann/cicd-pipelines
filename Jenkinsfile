@@ -14,12 +14,12 @@ pipeline {
     environment {
         gitBranch = "springboot-ci"
         githubRepoUrl = "git@github.com:LynaSovann/github-actions-ci.git"
-        githubCredential = "github-ssh-key"
+        githubCredential = "gittoken"
         registryCredential = 'ecr:us-east-1:awscreds'
-        appRegistry = "716920920468.dkr.ecr.us-east-1.amazonaws.com/springbootimage"
+        appRegistry = "716920920468.dkr.ecr.us-east-1.amazonaws.com/springimage"
         springBootRegistry = "https://716920920468.dkr.ecr.us-east-1.amazonaws.com"
-        cluster = "spring-test"
-        service = "springtestapptasksvc"
+        cluster = "springcicd"
+        service = "springcicdappsvc"
     }
 
     stages {
@@ -65,7 +65,7 @@ pipeline {
                 scannerHome = tool 'sonar6.2'
             }
             steps {
-              withSonarQubeEnv('sonarserver') {
+              withSonarQubeEnv('sonarqubeserver') {
                 sh '''
                     mvn sonar:sonar \
                     -Dsonar.projectKey=springboot \
