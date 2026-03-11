@@ -1,3 +1,5 @@
+.qodo
+
 # Terraform generated files
 terraform/.terraform/
 terraform/*.tfstate
