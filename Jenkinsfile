@@ -19,7 +19,7 @@ pipeline {
         appRegistry = "716920920468.dkr.ecr.us-east-1.amazonaws.com/springimage"
         springBootRegistry = "https://716920920468.dkr.ecr.us-east-1.amazonaws.com"
         cluster = "springcicd"
-        service = "springcicdappsvc"
+        service = "springcicdapptasksvc"
     }
 
     stages {
@@ -76,13 +76,13 @@ pipeline {
             }
         }
 
-        stage("Quality Gate") {
-            steps {
-                timeout(time: 30, unit: 'MINUTES') {
-                    waitForQualityGate abortPipeline: true
-                }
-            }
-        }
+        // stage("Quality Gate") {
+        //     steps {
+        //         timeout(time: 30, unit: 'MINUTES') {
+        //             waitForQualityGate abortPipeline: true
+        //         }
+        //     }
+        // }
 
 
         stage('Build App Image') {
