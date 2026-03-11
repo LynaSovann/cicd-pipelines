@@ -1,6 +1,5 @@
 .qodo
-
-terraform/*
+.env
 
 # Terraform generated files
 terraform/.terraform/
